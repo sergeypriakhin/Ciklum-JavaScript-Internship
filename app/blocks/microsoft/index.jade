@@ -1,0 +1,79 @@
+header.header
+	.header__wrap
+		.header__brand
+			img(src="assets/images/microsoft.png" alt="Microsoft logo" class="header__brand-img")
+
+		ul.header__nav.nav
+			li.nav__item.dropdown
+				a(href="#" class="nav__link dropdown__toggle") Магазин
+					i(class="fa fa-angle-down")
+				ul.dropdown__menu
+					li.dropdown__item
+						a(href="#" class="dropdown__link nav__link") Домашня сторінка Магазину
+					li.dropdown__item
+						a(href="#" class="dropdown__link nav__link dropdown__toggle") Office
+							i(class="fa fa-angle-down")
+						ul.dropdown__menu.dropdown__menu--tab.nav
+							li.dropdown__item
+								a(href="#" class="dropdown__link nav__link") Всі версії Office
+							li.dropdown__item
+								a(href="" class="dropdown__link nav__link") Програмні комплекси Office
+							li.dropdown__item
+								a(href="" class="dropdown__link nav__link") Усі програми Office
+							li.dropdown__item
+								a(href="" class="dropdown__link nav__link") Office для вашого Mac
+					li.dropdown__item
+						a(href="#" class="dropdown__link nav__link dropdown__toggle") Windows
+							i(class="fa fa-angle-down")
+						ul.dropdown__menu.dropdown__menu--tab
+							li.dropdown__item
+								a(href="#" class="dropdown__link nav__link") Windows 10 Home
+							li.dropdown__item
+								a(href="#" class="dropdown__link nav__link") Windows 10 Pro
+				li.nav__item.dropdown
+					a(class="nav__link dropdown dropdown__toggle" href="#") Продукты
+						i(class="fa fa-angle-down")
+					ul.dropdown__menu
+						li.dropdown__item
+							a(href="#" class="dropdown__link nav__link dropdown__toggle") Програмне забезпечення та служби
+								i(class="fa fa-angle-down")
+							ul.dropdown__menu.dropdown__menu--tab
+								li.dropdown__item
+									a(href="#" class="dropdown__link nav__link") Windows
+								li.dropdown__item
+									a(href="#" class="dropdown__link nav__link") Office
+						li.dropdown__item
+							a(href="#" class="dropdown__link nav__link dropdown__toggle") Пристрої та Xbox
+								i(class="fa fa-angle-down")
+							ul.dropdown__menu.dropdown__menu--tab.nav
+								li.dropdown__item
+									a(href="#" class="dropdown__link nav__link") Комп’ютерні аксесуари
+								li.dropdown__item
+									a(href="#" class="dropdown__link nav__link") Microsoft Lumia
+						li.dropdown__item
+							a(href="#" class="dropdown__link nav__link dropdown__toggle") Для бізнесу
+								i(class="fa fa-angle-down")
+							ul.dropdown__menu.dropdown__menu--tab.nav
+								li.dropdown__item
+									a(href="#" class="dropdown__link nav__link") Microsoft Azure
+								li.dropdown__item
+									a(href="#" class="dropdown__link nav__link") Microsoft Dynamics
+				li.nav__item
+					a(class="nav__link" href="#") Підтримка
+		
+		.header__menu
+			button(type="button" class="header__menu-item js-header__search--open" data-toggle="header__search")
+				i(class="fa fa-search")
+			a(class="header__menu-item shopping-cart" href="#")
+				i(class="shopping-cart__icon fa fa-shopping-basket")
+				span.shopping-cart__amount 0
+			a(href="#" class="header__menu-item header__menu-mob-icon-menu")
+				i.fa.fa-bars
+			a(href="#" class="header__menu-item header__sign") Вхід
+		
+		.header__search
+			form(action="" class="f-search")
+				.f-search-wrap
+					input(type="search" class="f-search-input" placeholder="Пошук на веб-сайті Microsoft.com")
+					button(type="submit" title="Search" class="f-search-submit")
+						i(class="fa fa-search")

@@ -1,0 +1,142 @@
+.signup {
+    font-family: 'Open Sans', 'open-sans', sans-serif;
+
+    padding: 160px 0 145px;
+
+    text-align: center;
+
+    background-color: #323a45;
+    @media (max-width: 900px) {
+        padding: 70px 0 45px;
+    }
+    &__wrap {
+        clear: both;
+
+        max-width: 1320px;
+        margin-right: auto;
+        margin-left: auto;
+        padding: 0 20px;
+    }
+    &__header {
+        font-size: 30px;
+        font-weight: 300;
+        line-height: 52px;
+
+        margin-bottom: 55px;
+
+        color: #ffffff;
+        @media (max-width: 750px) {
+            font-size: 20px;
+            line-height: 1.5;
+        }
+    }
+    &__form {
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 1em;
+
+        display: inline-block;
+
+        margin-bottom: 31px;
+
+        color: #8a959e;
+        @media (max-width: 750px) {
+            display: block;
+        }
+        &-group {
+            font-size: 18px;
+            line-height: normal;
+
+            position: relative;
+
+            float: left;
+
+            margin-right: 10px;
+
+            color: #747c83;
+            @media screen and (min-width: 751px) and (max-width: 1199px) {
+                //  // float: none;
+                width: 45%;
+                margin: 10px;
+            }
+            @media screen and (max-width: 750px) {
+                float: none;
+
+                margin: 10px 0px;
+            }
+        }
+        &-label {
+            font-size: 18px;
+            font-weight: 400;
+
+            position: absolute;
+            top: 0;
+            left: 0;
+
+            margin: 20px 0px 0px 50px;
+
+            cursor: text;
+
+            color: #8a959e;
+        }
+        &-icon {
+            position: absolute;
+            top: 18px;
+            left: 15px;
+        }
+        &-input {
+            line-height: 1em;
+
+            box-sizing: border-box;
+            width: 280px;
+            padding: 18px 15px 18px 48px;
+
+            border: 1px solid #d4d7da;
+            border-radius: 3px;
+            outline: none;
+            background: white;
+            @media (max-width: 1199px) {
+                width: 100%;
+            }
+            &:focus ~ label {
+                opacity: .5;
+            }
+        }
+        &-submit {
+            font-size: 15px;
+            font-weight: 700;
+
+            width: 100%;
+            padding: 21px 40px;
+
+            cursor: pointer;
+            transition: background .3s;
+            text-transform: uppercase;
+
+            color: white;
+            border: 0;
+            border-radius: 5px;
+            outline: none;
+            background: #ff3366;
+            &:hover {
+                background-color: #f42156;
+            }
+        }
+    }
+    &__footer {
+        font-size: 12px;
+        line-height: 1.8em;
+
+        clear: both;
+
+        color: #747c83;
+        a {
+            text-decoration: underline;
+
+            color: inherit;
+            &:hover {
+                color: #ffffff;
+            }
+        }
+    }
+}

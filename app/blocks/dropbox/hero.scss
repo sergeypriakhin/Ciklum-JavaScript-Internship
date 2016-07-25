@@ -1,0 +1,126 @@
+.hero {
+    font-family: 'Open Sans','lucida grande', 'Segoe UI', arial, verdana, 'lucida sans unicode', tahoma, sans-serif;
+
+    position: relative;
+    z-index: -1;
+
+    overflow: hidden;
+
+    color: #47525d;
+    background: #f7f7f7;
+    &__bg-container {
+        position: absolute;
+        z-index: 1;
+        top: 0;
+
+        width: 100%;
+        height: 100%;
+        padding: 0;
+        @media screen and (min-width: 400px) {
+            background-image: url('/assets/images/bg-dropbox.jpg');
+            background-repeat: no-repeat;
+            background-position: 300px center;
+            background-size: cover;
+        }
+        @media screen and (min-width: 600px) {
+            background-repeat: no-repeat;
+            background-position: 370px center;
+        }
+        @media (min-width: 1201px) {
+            position: absolute;
+            left: 50%;
+
+            width: 1770px;
+            margin-left: -885px;
+
+            background-position: right center;
+        }
+        @media (min-width: 1019px) {
+            background-size: contain;
+        }
+    }
+    &__wrap {
+        position: relative;
+        z-index: 2;
+
+        box-sizing: content-box;
+        max-width: 990px;
+        min-height: 400px;
+        margin: 0 auto;
+        padding: 20px;
+        @media (min-width: 400px) {
+            margin: 0;
+            padding-top: 45px;
+            padding-bottom: 45px;
+
+            text-align: left;
+        }
+        @media (min-width: 768px) {
+            min-height: 550px;
+            padding-top: 75px;
+            padding-bottom: 75px;
+        }
+        @media (min-width: 991px) {
+            position: relative;
+
+            margin: 0 auto;
+        }
+    }
+    &__container {
+        position: absolute;
+        top: 50%;
+
+        transform: translateY(-50%);
+        @media (max-width: 600px) {
+            right: 20px;
+            left: 20px;
+        }
+    }
+    &__header {
+        font-size: 26px;
+        font-weight: 100;
+        line-height: 1.3;
+
+        margin-bottom: 20px;
+
+        text-align: center;
+        @media only screen and (min-width: 767px) {
+            font-size: 31px;
+
+            max-width: 350px;
+        }
+        @media screen and (min-width: 1200px) {
+            font-size: 47.25px;
+
+            max-width: 520px;
+            padding-bottom: 0;
+        }
+    }
+    &__sub-header {
+        font-size: 16px;
+        font-weight: 100;
+
+        max-width: 330px;
+
+        text-align: center;
+        @media screen and (min-width: 1200px) {
+            font-size: 21px;
+            line-height: 1.5;
+
+            padding-bottom: 20px;
+        }
+    }
+    &__header,
+    &__sub-header {
+        @media screen and (min-width: 400px) {
+            width: 300px;
+            margin-right: 0;
+            margin-left: 0;
+
+            text-align: left;
+        }
+        @media screen and (min-width: 1200px) {
+            width: 450px;
+        }
+    }
+}

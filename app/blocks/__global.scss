@@ -1,0 +1,41 @@
+body {
+    overflow-x: hidden;
+}
+
+// ------------------------------
+//  Media Query Classes
+//-------------------------------
+@media #{$small-and-down} {
+    .hidden-s {
+        display: none !important;        
+    }
+    .visible-s {
+        display: block !important;
+    }
+}
+
+@media #{$medium-and-up} {
+    .hidden-m {
+        display: none !important;        
+    }
+    .visible-m {
+        display: block !important;
+    }
+}
+
+@media #{$large-and-up} {
+    .hidden-l {
+        display: none !important;        
+    }
+    .visible-l {
+        display: block !important;
+    }
+}
+
+// helpers class
+.left {
+    float: left;
+}
+.right {
+    float: right;
+}

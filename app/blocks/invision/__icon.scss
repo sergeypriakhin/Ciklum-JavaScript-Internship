@@ -1,0 +1,29 @@
+.icon {
+    display: inline-block;
+
+    width: 24px;
+    height: 24px;
+
+    vertical-align: middle;
+
+    background-image: url('/assets/images/invision-icon.png');
+    background-repeat: no-repeat;
+}
+
+.icon-user {
+    background-position: 0 -474px;
+
+    @extend .icon;
+}
+
+.icon-email {
+    background-position: 0 -386px;
+
+    @extend .icon;
+}
+
+.icon-lock {
+    background-position: 0 -430px;
+
+    @extend .icon;
+}

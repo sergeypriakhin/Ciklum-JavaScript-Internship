@@ -1,0 +1,59 @@
+.try-business-cta {
+    margin: 30px 0 0 0;
+
+    text-align: center;
+
+    background: none;
+    @media only screen and (max-width: 1200px) {
+        margin-top: 40px;
+    }
+    &__button {
+        font-size: 21px;
+        font-weight: normal;
+        line-height: 21px;
+
+        display: block;
+
+        margin: 0;
+        padding: 19px 26px;
+
+        text-align: center;
+        text-decoration: none;
+
+        color: #ffffff;
+        border: none;
+        border-radius: 6px;
+        background: #0071e0;
+        &:hover {
+            background-color: #3398ea;
+        }
+        @media only screen and (max-width: 1200px) {
+            font-size: 16px;
+
+            padding: 14px 40px;
+        }
+    }
+    &__footer {
+        font-size: 16px;
+
+        display: block;
+
+        margin-top: 15px;
+
+        text-align: center;
+
+        color: #47525d;
+        a {
+            text-decoration: none;
+
+            color: #0071e0;
+            border-bottom: 1px solid #0071e0;
+            &:hover {
+                color: #3398ea;
+            }
+        }
+        @media (min-width: 767px) {
+            text-align: left;
+        }
+    }
+}
